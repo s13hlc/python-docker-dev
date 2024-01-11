@@ -6,3 +6,15 @@ Once github and docker are configured:
 git add -A
 git commit -m "my commit"
 git push -u origin main OR may have to use git push -f (force)
+
+https://docs.docker.com/desktop/kubernetes/#install-and-turn-on-kubernetes
+
+kubectl config get-contexts
+kubectl config use-context docker-desktop
+
+Context List:  
+*   crc-admin                                   
+    crc-developer 
+    docker-desktop
+    myproject
+    pythontest
