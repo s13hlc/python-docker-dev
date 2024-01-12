@@ -11,10 +11,13 @@ https://docs.docker.com/desktop/kubernetes/#install-and-turn-on-kubernetes
 
 kubectl config get-contexts
 kubectl config use-context docker-desktop
-
+kubectl get nodes
 Context List:  
 *   crc-admin                                   
     crc-developer 
     docker-desktop
     myproject
     pythontest
+
+    oc expose svc/service-entrypoint -n pythontest
+    oc delete route service-entrypoint -n pythontest
